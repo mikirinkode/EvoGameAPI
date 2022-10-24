@@ -1,4 +1,7 @@
 package com.mikirinkode.evogame.service;
 
-public class LoggingSvc {
+import java.util.HashMap;
+
+public interface LoggingSvc {
+    void createLog(HashMap<String, Object> data, String type);
 }

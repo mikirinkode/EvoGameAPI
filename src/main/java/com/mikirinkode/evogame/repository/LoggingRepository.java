@@ -1,4 +1,10 @@
 package com.mikirinkode.evogame.repository;
 
-public class LoggingRepository {
+import com.mikirinkode.evogame.model.LoggingModel;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface LoggingRepository extends MongoRepository<LoggingModel, String> {
+
 }
